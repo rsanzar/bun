@@ -3,13 +3,13 @@ apps:
     ci:
       jobs:
         - name: prepare-code
-          runtime: bun-v1
+          runtime: bun-latest
           tshirt: standard
           commands:
             # - bun build server.js --compile --outfile server
             - cp server.js /app/server.js
     cd:
-      runtime: bun-v1
+      runtime: bun-latest
       tshirt: standard
       start_commands: 
          # 💥 1. Tune the Linux TCP stack dynamically
